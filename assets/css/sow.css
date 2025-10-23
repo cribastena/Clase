@@ -1,59 +1,173 @@
+/**
+ * (c) 2025 Anahí Kolofon - All rights reserved
+ */
+
+/* Header bar flex alignment */
+.header-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.back-button {
+  font-size: 2rem;
+}
+/* Sticky Menu */
+header {
+  background: #efefef;
+  box-shadow: 0 0px 5px #efefef;
+  position: fixed;
+  top: 0;
+  left: 5;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  margin-right: 1rem;
+  padding: 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #da0000;
+}
+
+/* Smooth Scrolling */
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 nav ul li a:hover,
 nav ul li a:focus {
-	color: #007acc;
-	outline: none;
-}
-header {
-	background: #fff;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-nav {
-	position: sticky;
-	top: 0;
-	z-index: 1000;
-}
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-nav ul li {
-	margin-right: 1rem;
-}
-nav ul li a {
-	text-decoration: none;
-	color: #333;
-}body {
-    background-color: aliceblue;
+  color: #da0000;
+  outline: none;
 }
 
+/* (Optional) animated cover */
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: #222;
+  color: #fff;
+}
+.cover-image-chungiyoo {
+  background-image: url("https://ik.imagekit.io/Akoqito/Captura%20de%20pantalla%202025-10-15%20141113.png");
+}
+.cover-image-gelato {
+  background-image: url("https://ik.imagekit.io/Akoqito/Captura%20de%20pantalla%202025-10-20%20134052.png?updatedAt=1760970524573");
+}
+.cover-image-kirifuda {
+  background-image: url("https://ik.imagekit.io/Akoqito/Captura%20de%20pantalla%202025-10-20%20160807.png");
+}
+.cover-image-gladeye {
+  background-image: url("https://ik.imagekit.io/Akoqito/img_0720.jpg?updatedAt=1760978785797");
+}
+.title {
+  overflow: hidden;
+  margin-bottom: 1em; /* o el valor que quieras darle */
+  white-space: nowrap;
+  border-right: 0.15em solid currentColor;
+  animation: typing 3s steps(30, end) forwards,
+    blink-caret 0.75s step-end infinite;
+  text-shadow: black 1px 1px 2px;
+}
+.title {
+  overflow: hidden;
+  margin-bottom: 1em; /* o el valor que quieras darle */
+  white-space: nowrap;
+  border-right: 0.15em solid currentColor;
+  animation: typing 3s steps(30, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+.titulo-personalizado {
+  color: rgb(187, 0, 0);
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  height: 0rem;
+  padding: 3rem; /* espacio interno */
+}
+
+.subtitulo-personalizado {
+  color: rgb(187, 0, 0);
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  height: 0rem;
+  padding: 2rem; /* espacio interno */
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    /* https://stackoverflow.com/a/79391822 */
+    width: calc-size(auto, size);
+  }
+}
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Section Styling */
 section {
-    height: 90vh;
-}    
+  padding: 2rem;
+}
+.row {
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+.copyright-row {
+  padding-top: 1rem;
+}
 
-header {
-	background: #ffffff;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Analysis Summary Styling */
+/* .analysis-text {
+  columns: 1;
+  column-gap: 2rem;
 }
-nav {
-	position: fixed;
-	top: 0;
-	z-index: 1000;
+@media (min-width: 800px) {
+  .analysis-text {
+    columns: 2;
+  }
+} */
+.button-analysis {
+  border: 2px solid rgb(32, 5, 5);
+  border-radius: 100px;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: rgb(195, 53, 2);
+  text-align: center;
+  font-size: 1.5rem;
 }
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
+
+.button-analysis:hover {
+  background: linear-gradient(180deg, #b00000 0%, #d06969 100%);
+  color: rgb(255, 255, 255);
 }
-nav ul li {
-	margin-right: 1rem;
+
+.col-md-6 {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-nav ul li a {
-	text-decoration: none;
-	color: #333;
+
+.site-awwwards {
+  text-align: left;
+  margin: 0.5rem 0;
+  padding: 1rem;
 }
