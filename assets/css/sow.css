@@ -1,5 +1,5 @@
 /**
- * (c) 2025 Anahí Kolofon - All rights reserved
+ * (c) 2025 Candela Ribas - All rights reserved
  */
 
 /* Header bar flex alignment */
@@ -10,6 +10,7 @@
 }
 .back-button {
   font-size: 2rem;
+  color: #72f954;
 }
 /* Sticky Menu */
 header {
@@ -34,7 +35,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #da0000;
+  color: #640980;
 }
 
 /* Smooth Scrolling */
@@ -43,7 +44,7 @@ html {
 }
 nav ul li a:hover,
 nav ul li a:focus {
-  color: #da0000;
+  color: #640980;
   outline: none;
 }
 
@@ -53,7 +54,7 @@ nav ul li a:focus {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background: #222;
+  background: #640980;
   color: #fff;
 }
 .cover-image-chungiyoo {
@@ -87,7 +88,7 @@ nav ul li a:focus {
 }
 
 .titulo-personalizado {
-  color: rgb(187, 0, 0);
+  color: #640980;
   font-weight: bold;
   font-size: 30px;
   text-align: center;
@@ -96,7 +97,7 @@ nav ul li a:focus {
 }
 
 .subtitulo-personalizado {
-  color: rgb(187, 0, 0);
+  color: #640980;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
@@ -141,18 +142,18 @@ section {
   }
 } */
 .button-analysis {
-  border: 2px solid rgb(32, 5, 5);
+  border: 2px solid #72f954;
   border-radius: 100px;
   padding: 1rem 1.5rem;
   text-decoration: none;
-  color: rgb(195, 53, 2);
+  color: #640980;
   text-align: center;
   font-size: 1.5rem;
 }
 
 .button-analysis:hover {
-  background: linear-gradient(180deg, #b00000 0%, #d06969 100%);
-  color: rgb(255, 255, 255);
+  background: #72f954;
+  color: #640980;
 }
 
 .col-md-6 {
